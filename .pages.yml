@@ -1,0 +1,114 @@
+
+media:
+  input: assets/uploads
+  output: /assets/uploads
+
+content:
+  - name: homepage
+    label: Homepage
+    type: file
+    path: content/home.json
+    format: json
+    fields:
+      - name: home_eyebrow
+        label: Small heading
+        type: string
+      - name: home_heading
+        label: Main headline
+        type: string
+      - name: home_intro
+        label: Introduction
+        type: text
+      - name: home_about_heading
+        label: About heading
+        type: string
+      - name: home_about_text
+        label: About introduction
+        type: text
+      - name: home_about_detail
+        label: About paragraph
+        type: text
+
+  - name: about
+    label: About Us
+    type: file
+    path: content/about.json
+    format: json
+    fields:
+      - name: mission_heading
+        label: Mission heading
+        type: string
+      - name: mission_intro
+        label: Mission introduction
+        type: text
+      - name: mission_detail
+        label: Mission paragraph
+        type: text
+      - name: belief_heading
+        label: Our belief
+        type: string
+      - name: how_we_work
+        label: How we work
+        type: text
+
+  - name: events
+    label: Events
+    type: file
+    path: content/events.json
+    format: json
+    list: true
+    fields:
+      - name: category
+        label: Category
+        type: string
+      - name: title
+        label: Event title
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: text
+      - name: details
+        label: Date and registration details
+        type: string
+      - name: status
+        label: Status label
+        type: string
+      - name: image
+        label: Event image
+        type: image
+      - name: link
+        label: Link
+        type: string
+
+  - name: initiatives
+    label: Initiatives
+    type: file
+    path: content/initiatives.json
+    format: json
+    list: true
+    fields:
+      - name: number
+        label: Number
+        type: string
+      - name: eyebrow
+        label: Small heading
+        type: string
+      - name: title
+        label: Initiative title
+        type: string
+        required: true
+      - name: description
+        label: Description
+        type: text
+      - name: points
+        label: Key activities
+        type: string
+        list: true
+      - name: slug
+        label: Section link
+        type: string
+
+settings:
+  content:
+    merge: true
