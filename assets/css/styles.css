@@ -1410,3 +1410,7 @@ h1 em, h2 em {
   width: 120px;
   height: 55px;
 }
+.site-header {
+  position: relative;
+  top: auto;
+}
