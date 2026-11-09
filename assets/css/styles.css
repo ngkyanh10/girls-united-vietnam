@@ -238,3 +238,127 @@ h2 { font-size: clamp(38px, 4.5vw, 58px); margin-bottom: 22px; }
   .involve-card { min-height: 260px; }
   .form-grid h2 { font-size: 43px; }
 }
+/* GIRLS UNITED VIETNAM — NEW CREATIVE IDENTITY */
+
+:root {
+  --burgundy: #432c45;
+  --burgundy-deep: #432c45;
+  --ink: #432c45;
+  --muted: #756b70;
+  --cream: #f6f0e6;
+  --paper: #f6f0e6;
+  --gold: #ffcb54;
+  --line: rgba(67, 44, 69, .18);
+
+  --serif: "Outfit", sans-serif;
+  --sans: "DM Sans", sans-serif;
+  --hand: "Kalam", cursive;
+}
+
+/* Typography */
+body {
+  background: var(--cream);
+  color: var(--burgundy);
+  font-family: var(--sans);
+}
+
+h1, h2, h3,
+.pillar-card h3,
+.event-info h3,
+.event-list-content h3,
+.involve-card h3 {
+  font-family: var(--serif);
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+h1 {
+  font-weight: 900;
+  letter-spacing: -3px;
+}
+
+.eyebrow,
+.hero-note,
+.image-label {
+  font-family: var(--hand);
+  text-transform: none;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+/* Colours */
+.site-header {
+  background: rgba(246, 240, 230, .96);
+}
+
+.hero,
+.page-hero,
+.closing-cta,
+.values-band,
+.form-section {
+  background-color: var(--burgundy);
+}
+
+.hero-shade {
+  background: linear-gradient(
+    90deg,
+    rgba(67, 44, 69, .88),
+    rgba(67, 44, 69, .35)
+  );
+}
+
+.button,
+.nav-cta {
+  border-radius: 40px !important;
+}
+
+.button-dark,
+.main-nav .nav-cta {
+  background: var(--burgundy);
+}
+
+.button-light {
+  background: var(--gold);
+}
+
+.intro,
+.feature,
+.event-feature,
+.simple-cta,
+.involve-card {
+  background: var(--cream);
+}
+
+.site-footer {
+  background: var(--burgundy);
+}
+
+/* More playful details */
+.pillar-card,
+.involve-card {
+  border-radius: 18px;
+}
+
+.feature-image,
+.event-image,
+.story-image,
+.initiative-photo,
+.event-list-image {
+  border-radius: 18px;
+}
+
+.large-copy {
+  font-family: var(--hand);
+  font-size: 25px;
+}
+
+.underlined-link {
+  border-color: var(--gold);
+  border-width: 2px;
+}
+
+@media (max-width: 680px) {
+  h1 {
+    letter-spacing: -2px;
+  }
+}
