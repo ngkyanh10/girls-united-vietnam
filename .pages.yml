@@ -108,7 +108,27 @@ content:
       - name: slug
         label: Section link
         type: string
-
+  - name: team
+    label: Our Team
+    type: file
+    path: content/team.json
+    format: json
+    list: true
+    fields:
+      - name: name
+        label: Full name
+        type: string
+        required: true
+      - name: role
+        label: Position / role
+        type: string
+        required: true
+      - name: bio
+        label: Short biography
+        type: text
+      - name: image
+        label: Profile photo
+        type: image
 settings:
   content:
     merge: true
