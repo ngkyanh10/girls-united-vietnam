@@ -1397,3 +1397,16 @@ h1 em, h2 em {
     font-size: 43px;
   }
 }
+/* Girls United Vietnam logo */
+.brand-logo {
+  display: block;
+  width: 145px;
+  height: 65px;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.brand-footer .brand-logo {
+  width: 155px;
+  height: 70px;
+}
