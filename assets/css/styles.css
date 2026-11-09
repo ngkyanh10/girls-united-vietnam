@@ -1445,3 +1445,77 @@ h1 em, h2 em {
     height: 45px;
   }
 }
+/* FOUNDING TEAM */
+.team-section {
+  background: #f6f0e6;
+}
+
+.team-heading {
+  max-width: 650px;
+  margin-bottom: 55px;
+}
+
+.team-heading h2 {
+  margin-bottom: 18px;
+}
+
+.team-heading > p:last-child {
+  line-height: 1.8;
+  color: #665c61;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.team-card {
+  background: white;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.team-avatar {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-avatar span {
+  font-family: 'Playfair Display', serif;
+  font-size: 110px;
+  color: #432c45;
+}
+
+.avatar-peach {
+  background: #e8a08c;
+}
+
+.avatar-yellow {
+  background: #ffcb54;
+}
+
+.avatar-plum {
+  background: #d8c6d9;
+}
+
+.team-info {
+  padding: 25px;
+}
+
+.team-info h3 {
+  font-size: 23px;
+  margin: 8px 0 0;
+}
+
+@media (max-width: 700px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .team-avatar {
+    height: 260px;
+  }
+}
