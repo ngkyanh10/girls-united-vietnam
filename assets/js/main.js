@@ -24,8 +24,24 @@ document.addEventListener("DOMContentLoaded", () => {
     el.textContent = new Date().getFullYear();
   });
 
+  // Load homepage content from Pages CMS
+  fetch("content/home.json")
+    .then(response => {
+      if (!response.ok) throw new Error("Could not load homepage content");
+      return response.json();
+    })
+    .then(data => {
+      const headline = document.querySelector(".hero-content h1");
+
+      if (headline && data.home_heading) {
+        headline.textContent = data.home_heading;
+      }
+    })
+    .catch(error => console.error("Homepage content error:", error));
+
   const form = document.getElementById("interest-form");
   const notice = document.getElementById("form-notice");
+
   if (form && notice) {
     form.addEventListener("submit", event => {
       event.preventDefault();
