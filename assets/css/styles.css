@@ -1414,3 +1414,34 @@ h1 em, h2 em {
   position: relative;
   top: auto;
 }
+/* Larger GUV branding */
+.brand-logo {
+  width: 115px !important;
+  height: 80px !important;
+  object-fit: contain;
+}
+
+.brand-footer .brand-logo {
+  width: 145px !important;
+  height: 90px !important;
+}
+
+/* Logo beside the hero caption */
+.hero-note {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.hero-note-logo {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .hero-note-logo {
+    width: 45px;
+    height: 45px;
+  }
+}
