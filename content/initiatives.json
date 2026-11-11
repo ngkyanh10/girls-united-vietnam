@@ -1,1 +1,22 @@
-[]
+[
+  {
+    "number": "01",
+    "title": "Sport opportunities",
+    "description": "We believe sport creates opportunities for connection, confidence and growth within the youth. Therefore, we aim to make sports more accessible to young people across Vietnam, fostering new communities through participation, athletic development and competition.",
+    "points": [
+      "Variation in sporting events and tournaments",
+      "Supporting athletic development ",
+      "Opportunities to connect with coaches & sporting figures through mentorship and engagement "
+    ]
+  },
+  {
+    "number": "02",
+    "title": "Creative opportunities",
+    "description": "We strive to elevate the arts by providing platforms for talented young creatives to pursue excellence, gain recognition, and showcase their work. GUV aims to connect emerging talent with new creative opportunities.",
+    "points": [
+      "Competitive dance events and performance showcases",
+      "Curated art exhibitions, auctions with fundraising initiatives",
+      "Engagement with established artists and industry professionals"
+    ]
+  }
+]
